@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mulheres Nada Trivais</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script>
+            // Captura o nome de usuário da URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const username = urlParams.get("username");
+    
+            // Exibe a mensagem de boas-vindas
+            if (username) {
+                document.write("<h1>Boas vindas," + username + "! Agora escolha o seu tema:</h1>");
+            } else {
+                document.write("<h1>Boas vindas!</h1>");
+            }
+        </script>
+        
+      <a href="00-mulheresnadatriviais3.html"><h2>Desigualdades de Gênero no Mercado de Trabalho</h2></a> 
+       <section class="pginicial" id="imginicial1">
+        <img src="https://cdn.glitch.global/d946249a-273a-4b0b-90c2-eb5ad29c770c/Desigualdade%20de%20genero.jpeg?v=1696349071173" alt="Desigualdade de gênero" width="300">
+        </section>
+      <a href="00-mulheresnadatriviais4.html"><h2>Áreas de Destaque para as Mulheres</h2></a>
+       <section class="pginicial" id="imginicial2">
+        <img src="https://cdn.glitch.global/d946249a-273a-4b0b-90c2-eb5ad29c770c/Mulheres%20no%20trabalho.jpg?v=1696349079074" alt="Áreas de Destaque para as mulheres" width="300">
+        </section>
+     
+    </body>
+</html>

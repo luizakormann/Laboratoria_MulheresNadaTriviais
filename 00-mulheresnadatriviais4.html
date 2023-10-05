@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de Destaque para as Mulheres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Áreas de Destaque para as Mulheres</h1>
+  <section class="pginicial" id="imginicial">
+        <img src="https://cdn.glitch.global/d946249a-273a-4b0b-90c2-eb5ad29c770c/Mulheres%20no%20trabalho.jpg?v=1696349079074" alt="Áreas de Destaque para as mulheres" width="300">
+        </section>
+    <label><h3>Pergunta 1</h3></label>
+    <div class="question">
+        <p><h3>Onde as mulheres estão se destacando cada vez mais, que antes era dominado principalmente por homens?</h3></p>
+        <input type="radio" name="q1" value="No campo das ciências sociais."> No campo das ciências sociais.<br>
+        <input type="radio" name="q1" value="Na indústria automobilística."> Na indústria automobilística.<br>
+        <input type="radio" name="q1" value="Na área de tecnologia."> Na área de tecnologia.<br>
+        <div class="feedback" id="feedback1"></div>
+    </div>
+
+    <label><h3>Pergunta 2</h3></label>
+    <div class="question">
+        <p><h3>O que as mulheres estão fazendo em relação ao empreendedorismo?
+        </h3></p>
+        <input type="radio" name="q2" value="Desistindo de empreender devido às desigualdades de gênero."> Desistindo de empreender devido às desigualdades de gênero.<br>
+        <input type="radio" name="q2" value="Criando seus próprios negócios e se destacando em várias áreas."> Criando seus próprios negócios e se destacando em várias áreas.<br>
+        <input type="radio" name="q2" value="Reduzindo sua participação no mercado de empreendedorismo."> Reduzindo sua participação no mercado de empreendedorismo.<br>
+        <div class="feedback" id="feedback2"></div>
+    </div>
+    <br>
+    <button onclick="verificarRespostas()">Verificar Respostas</button>
+
+    <script>
+        function verificarRespostas() {
+            const resposta1 = document.querySelector('input[name="q1"]:checked');
+            const resposta2 = document.querySelector('input[name="q2"]:checked');
+
+            
+
+            const respostaCorreta1 = "Na área de tecnologia."; // Resposta correta para a pergunta 1
+            const respostaCorreta2 = "Criando seus próprios negócios e se destacando em várias áreas."; // Resposta correta para a pergunta 2
+
+            let pontuacao = 0;
+
+            if (resposta1.value === respostaCorreta1) {
+                pontuacao++;
+              document.getElementById("feedback1").textContent = "Resposta correta!";
+            } else {
+                document.getElementById("feedback1").textContent = "Resposta incorreta. A resposta correta é: Na área de tecnologia.";
+            }
+
+            if (resposta2.value === respostaCorreta2) {
+                pontuacao++;
+                document.getElementById("feedback2").textContent = "Resposta correta!";
+            } else {
+                document.getElementById("feedback2").textContent = "Resposta incorreta. A resposta correta é: Criando seus próprios negócios e se destacando em várias áreas.";
+            }
+
+            alert(`Você acertou ${pontuacao} de 2 perguntas.`);
+        }
+    </script>
+<br>
+<br>
+<a href="00-mulheresnadatriviais2.html">Voltar</a>
+        <script src="script.js"></script>
+    </body>
+</html>

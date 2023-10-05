@@ -1,0 +1,64 @@
+h1 {
+    color: #453c52;
+    background-color: #B37FAF;
+    border: 1px solid #5F5370;
+    text-align: center;
+    
+  }/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: monospace;
+  color: #5F5370;
+  line-height: 1.5;
+   background-color: #9A95CB;
+}
+
+h3 {
+ color: #453c52; 
+}
+
+h2 {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* images and videos max out at full width */
+img
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+#imginicial {
+  text-align: center;
+}
+
+#imginicial1 {
+  text-align: center;
+}
+
+#imginicial2 {
+  text-align: center;
+}
+
+#feedback1 {
+ font-weight: bold;
+  color: #ffffff;
+}
+
+#feedback2 {
+ font-weight: bold;
+  color: #ffffff;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desigualdades de Gênero no Mercado de Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desigualdades de Gênero no Mercado de Trabalho</h1>
+  <section class="pginicial" id="imginicial">
+        <img src="https://cdn.glitch.global/d946249a-273a-4b0b-90c2-eb5ad29c770c/Desigualdade%20de%20genero.jpeg?v=1696349071173" alt="Desigualdade de gênero" width="300">
+        </section>
+    <label><h3>Pergunta 1</h3></label>
+    <div class="question">
+        <p><h3>Qual das seguintes afirmações sobre desigualdades de gênero no mercado de trabalho é verdadeira?</h3></p>
+        <input type="radio" name="q1" value="As mulheres ganham mais do que os homens por trabalho semelhante."> As mulheres ganham mais do que os homens por trabalho semelhante.<br>
+        <input type="radio" name="q1" value="A presença de mulheres em cargos de liderança é igual à dos homens."> A presença de mulheres em cargos de liderança é igual à dos homens.<br>
+        <input type="radio" name="q1" value="As mulheres continuam ganhando, em média, menos do que os homens por trabalho semelhante."> As mulheres continuam ganhando, em média, menos do que os homens por trabalho semelhante.<br>
+        <div class="feedback" id="feedback1"></div>
+    </div>
+
+    <label><h3>Pergunta 2</h3></label>
+    <div class="question">
+        <p><h3>O que as mulheres têm buscado fazer para combater as desigualdades de gênero no mercado de trabalho?
+        </h3></p>
+        <input type="radio" name="q2" value="Ignorar as questões de igualdade de gênero."> Ignorar as questões de igualdade de gênero.<br>
+        <input type="radio" name="q2" value="Participar de movimentos de conscientização, como o #MeToo."> Participar de movimentos de conscientização, como o #MeToo.<br>
+        <input type="radio" name="q2" value="Reforçar estereótipos de gênero no ambiente de trabalho."> Reforçar estereótipos de gênero no ambiente de trabalho.<br>
+        <div class="feedback" id="feedback2"></div>
+    </div>
+    <br>
+    <button onclick="verificarRespostas()">Verificar Respostas</button>
+
+    <script>
+        function verificarRespostas() {
+            const resposta1 = document.querySelector('input[name="q1"]:checked');
+            const resposta2 = document.querySelector('input[name="q2"]:checked');
+
+            
+
+            const respostaCorreta1 = "As mulheres continuam ganhando, em média, menos do que os homens por trabalho semelhante."; // Resposta correta para a pergunta 1
+            const respostaCorreta2 = "Participar de movimentos de conscientização, como o #MeToo."; // Resposta correta para a pergunta 2
+
+            let pontuacao = 0;
+
+            if (resposta1.value === respostaCorreta1) {
+                pontuacao++;
+              document.getElementById("feedback1").textContent = "Resposta correta!";
+            } else {
+                document.getElementById("feedback1").textContent = "Resposta incorreta. A resposta correta é: As mulheres continuam ganhando, em média, menos do que os homens por trabalho semelhante.";
+            }
+
+            if (resposta2.value === respostaCorreta2) {
+                pontuacao++;
+                document.getElementById("feedback2").textContent = "Resposta correta!";
+            } else {
+                document.getElementById("feedback2").textContent = "Resposta incorreta. A resposta correta é: Participar de movimentos de conscientização, como o #MeToo.";
+            }
+
+            alert(`Você acertou ${pontuacao} de 2 perguntas.`);
+        }
+    </script>
+<br>
+<br>
+<a href="00-mulheresnadatriviais2.html">Voltar</a>
+        <script src="script.js"></script>
+    </body>
+</html>
